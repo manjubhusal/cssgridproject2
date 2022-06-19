@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-color: white;
+    
+}
+main {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+@media (min-width: 670px) {
+    .container {
+        max-width: 640px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "box1 box1 box1 box1"
+        "box2 box2 box3 box3";
+    }
+} 
+.container {
+    display: grid;
+    border-radius: 30px;
+    height: 500px; 
+}
+
+@media (min-width: 670px){
+    .box1 {
+       grid-area: box1; 
+    }
+} 
+.box1{
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 25px 25px 40px 5px rgb(0,0,0,0.2);
+    padding: 30px;
+}
+@media (min-width: 670px){
+    .box2 {
+        grid-area: box2;  
+    }
+}
+.box2{
+    border: 1px solid rgb(64, 181, 173);
+    background-color:rgb(64, 181, 173) ;
+    padding: 30px;
+    box-shadow: 25px 25px 40px 5px rgb(0,0,0,0.2);
+}
+@media (min-width: 670px) {
+    .box3 {
+     grid-area: box3;  
+    }    
+}
+.box3{
+    border: 1px solid rgb(83, 210, 197);
+    background-color: rgb(83, 210, 197);
+    padding: 30px;
+    box-shadow: 25px 25px 40px 5px rgb(0,0,0,0.2);
+}
+.box1>h1 {
+    font-size: 26px;
+    color: rgb(21, 193, 181);
+}
+.box1>h2 {
+    font-size: 20px;
+    color: rgb(171, 225, 91);
+    padding-top: 30px;
+}
+.box1>p {
+    padding-top: 30px;
+    line-height: 25px;
+    font-size: 18px;
+}
+    
+.box2>h2 {
+    font-size: 20px;
+    color: white;
+}
+.paragraph1 {
+    padding-top: 20px;
+}
+.para1{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.para2 {
+    color:rgb(64, 224, 208);
+}
+.paragraph2 {
+    color: white;
+}
+.button{
+    padding-top: 40px;   
+}
+.btn {
+    border: 1px solid rgb(147, 232, 18);
+    text-decoration: none;
+    padding: 10px 60px;
+    color: white;
+    background-color: rgb(147, 232, 18);
+}
+.box3>h2 {
+    font-size: 20px;
+    color: white;
+}
+.list{
+    padding-top: 20px;
+    list-style: none;
+}
+.item1 {
+   color: white;
+   line-height: 20px;
+}
+
+
